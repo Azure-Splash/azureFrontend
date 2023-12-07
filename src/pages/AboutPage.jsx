@@ -1,4 +1,4 @@
-
+import Footer from "../components/Footer"
 
 export default function AboutPage(props){
         return (
@@ -8,7 +8,10 @@ export default function AboutPage(props){
                         About
                         
                     </h1>
+                    <Footer/>
             </div>
+           
+            
         )
 }
     

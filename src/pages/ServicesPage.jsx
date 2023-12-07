@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function ServicesPage(props){
 	return(
 		<div>
@@ -6,6 +8,7 @@ export default function ServicesPage(props){
                 Services
                 
             </h1>
+			<Footer/>
 		</div>
 	)
 }

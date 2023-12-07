@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import axios from 'axios'
+import Footer from "../components/Footer";
 
 
 export default function LoginSignupPage(props){
@@ -76,6 +77,7 @@ export default function LoginSignupPage(props){
             <button type="submit">Submit</button>
         </div>
         </form>
+        <Footer/>
 		</div>
 	)
 }

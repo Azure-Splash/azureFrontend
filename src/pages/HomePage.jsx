@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function HomePage(props){
 	return(
 		<div>
@@ -6,6 +8,7 @@ export default function HomePage(props){
                 Home
                 
             </h1>
+			<Footer/>
 		</div>
 	)
 }
