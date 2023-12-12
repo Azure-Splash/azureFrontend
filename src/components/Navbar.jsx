@@ -1,40 +1,37 @@
 import { NavLink } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
+import NavItem from 'react-bootstrap/NavItem'
+
 
 export default function Navbar(props){
 	return (
-		<nav>
-			
-			<ul>
-				<li>
-					<NavLink to="/" style={({isActive}) => isActive ? {color: "red"} : undefined} >
+
+        <Nav variant="tabs" defaultActiveKey="/home">
+			<NavItem>
+					<NavLink to="/" >
 						Home
 					</NavLink>
-				</li>
-				<li>
 					<NavLink to="/about">
 						About
 					</NavLink>				
-				</li>
-				<li>
-					<NavLink to="/services" style={({isActive}) => isActive ? {color: "red"} : undefined} >
+
+					<NavLink to="/services" >
 						Services
 					</NavLink>
-				</li>
-				<li>
-					<NavLink to="/contact" style={({isActive}) => isActive ? {color: "red"} : undefined} >
+
+					<NavLink to="/contact"  >
 						Contact
 					</NavLink>
-				</li>
-			
-				<li>
-					<NavLink to="/loginorsignup" style={({isActive}) => isActive ? {color: "red"} : undefined} >
+
+					<NavLink to="/loginorsignup"  >
 						Login/Sign Up
 					</NavLink>
-				</li>
-			</ul>
-		</nav>
+			</NavItem>
+			<img class="navimage" src="../azuresplashlogo.png" alt="azure splash logo"/>
+		</Nav>
+
 	)
 }
       
         
-    
+<img class="navimage" src="../azuresplashlogo.png" alt="azure splash logo"/>
