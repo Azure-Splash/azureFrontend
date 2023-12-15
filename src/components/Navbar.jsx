@@ -26,6 +26,10 @@ export default function Navbar(props){
 					<NavLink to="/loginorsignup"  >
 						Login/Sign Up
 					</NavLink>
+
+					<NavLink to="/signup"  >
+						Sign Up
+					</NavLink>
 			</NavItem>
 			<img class="navimage" src="../azuresplashlogo.png" alt="azure splash logo"/>
 		</Nav>

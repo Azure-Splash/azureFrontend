@@ -2,6 +2,7 @@ import {useState} from "react";
 import {Link} from "react-router-dom";
 import axios from 'axios'
 import Footer from "../components/Footer";
+import {login} from "../functions/login";
 
 
 
@@ -9,12 +10,14 @@ export default function LoginSignupPage(props){
         const[email, setEmail] = useState('')
         const[password, setPassword] = useState('')
 
-        const handleSubmit = (event) =>{
-            event.preventDefault()
-            axios.post('http://localhost:3000/loginorsignup', {email,password})
-            .then(result => console.log(result))
-            .catch(err=>console.log(err))
-        }
+        // const handleSubmit = (event) =>{
+        //     event.preventDefault()
+         
+        //     axios.post('http://localhost:3000/loginorsignup', {email,password})
+        //     .then(result => console.log(result))
+        //     .catch(err=>console.log(err))
+            
+        // }
 
     return(
 		<div>
@@ -23,17 +26,25 @@ export default function LoginSignupPage(props){
                 Login
                 
             </h1>
-        <form action ="POST">
+        <form>
         <label>
             <p>Email</p>
-            <input type="email" onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
+            <input 
+            type="email" 
+            value={email}
+            onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
         </label>
         <label>
             <p>Password</p>
-            <input type="password"onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
+            <input 
+            type="password"
+            value={password}
+            onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
         </label>
         <div>
-            <button type="submit">Login</button>
+            <button onClick={() => {login(email, password)}}>
+                Login
+            </button>
         </div>
         </form>
         <div>
