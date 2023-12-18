@@ -28,9 +28,9 @@ export default function BookingPage() {
     }
   
     return (
-        <div>
+        <div className="booking-calendar-container">
           <h1>Booking Calendar</h1>
-          <div>
+          <div className="centered-calendar">
             <Calendar onChange={handleDateChange} value={date} />
           </div>
           <div>
