@@ -10,6 +10,7 @@ import SignupPage from './pages/SignupPage';
 import Navbar from './components/Navbar';
 import axios from 'axios';
 import {useEffect, useState } from 'react';
+import BookingPage from './pages/BookingPage';
 
 
 
@@ -35,7 +36,7 @@ function App() {
      
 
 
-      <img src="../azuresplashlogo.png" alt="azure splash logo"/>
+    
       <Navbar />
 
       <Routes>
@@ -47,6 +48,8 @@ function App() {
         <Route path="/loginorsignup" element={<LoginSignupPage />}/>
         <Route path="/signup" element={<SignupPage/>}/>
         <Route path="/POST" element={<LoginSignupPage />}/>
+        {/* This is for testing, to be removed */}
+        <Route path="/booking" element={<BookingPage />}/> 
 
 
       </Routes>
