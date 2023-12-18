@@ -30,6 +30,9 @@ export default function Navbar(props){
 					<NavLink to="/signup"  >
 						Sign Up
 					</NavLink>
+					<NavLink to="/booking"  >
+						Bookings
+					</NavLink>
 			</NavItem>
 			<img class="navimage" src="../azuresplashlogo.png" alt="azure splash logo"/>
 		</Nav>
