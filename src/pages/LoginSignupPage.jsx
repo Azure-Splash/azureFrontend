@@ -1,7 +1,7 @@
 import {useState} from "react";
-import {Link} from "react-router-dom";
-import axios from 'axios'
-import Footer from "../components/Footer";
+// import {Link} from "react-router-dom";
+// import axios from 'axios'
+ import Footer from "../components/Footer";
 import {login} from "../functions/login";
 
 

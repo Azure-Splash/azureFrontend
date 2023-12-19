@@ -1,5 +1,5 @@
 import contact from "../functions/contact";
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 
 export default function ContactForm(props){
     

@@ -20,11 +20,11 @@ function Footer(props){
                 <h3>Social Media:</h3>
             </div>
             <div>
-                <img src="instagramlogo.png"/>
+                <img src="instagramlogo.png" alt="insta"/>
                 <h3> @azuresplash</h3>
             </div>
             <div>
-                <img src="facebooklogo.png"/>
+                <img src="facebooklogo.png" alt="facebook"/>
                 <h3> Azure Splash</h3>
             </div>
             </div>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './pages/HomePage';
@@ -22,9 +22,10 @@ axios.defaults.withCredentials = true
 function App() {
 
   
-  const [jwt, setJwt] = useState("");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [jwt, //setJwt
+] = useState("");
+  // const [username, setUsername] = useState("");
+  // const [password, setPassword] = useState("");
 
   useEffect(() => {
   console.log(`JWT value is:\n${jwt}`);

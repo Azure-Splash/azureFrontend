@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import indoorpool from './images/indoorpool.png'
+
 
 export default function HeaderCarousel() {
   return (
