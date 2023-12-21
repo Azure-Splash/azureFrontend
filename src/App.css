@@ -90,3 +90,88 @@
   max-width: 400px; /* Set a maximum width for the calendar if needed */
   width: 100%;
 }
+#contact-title{
+  padding-top: 4vh;
+}
+#contact-details{
+
+  display:flex;
+  text-align:start;
+  justify-content:space-evenly;
+  height: 30vh;
+  float:inherit;
+  img{max-width:4vh};
+  padding-top: 3vh;
+  padding-bottom: 0vh;
+  margin-bottom: 0vh;
+  
+  
+
+}
+#social-media-section{
+  display:flex;
+  
+  
+}
+
+#social-media-instagram{
+  display:flex;
+  padding:1vh;
+
+  
+}
+
+#social-media-facebook{
+  display:flex;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 1vh
+
+  
+}
+
+#instagram-tag{
+  display:flex;
+  align-items: flex-end;
+  padding-left:1vh;
+}
+
+#facebook-name{
+  display:flex;
+  align-items: flex-end;
+  padding-left:1vh
+  
+}
+
+.custom-border{
+  border: 3px solid steelblue;
+  padding: 1vh;
+  margin-bottom: 5vh;
+}
+
+.custom-container{
+  
+  max-width: 40vh;
+  max-height: 80vh;
+  
+
+}
+
+.form-group label {
+  
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5vh;
+}
+
+.divider{
+  border-bottom:0.5vh solid steelblue;
+  margin: 1% 5% 3%;}
+
+.mail-icon{
+  max-width: 5vh;
+  padding-bottom:2vh;
+  
+
+}
