@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .App {
   text-align: center;
 }
@@ -89,4 +90,183 @@
 .centered-calendar {
   max-width: 400px; /* Set a maximum width for the calendar if needed */
   width: 100%;
+=======
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* nav styling */
+
+.nav-item{
+  background-color: #4287F5;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height:140px;
+
+}
+
+
+.navimage{
+  position: absolute;
+  top: 0;
+  height: 170px;
+  margin-left: 30px;
+}
+
+.nav-item a{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  height:140px;
+  margin-right: 14px;
+}
+
+.nav-item a:hover{
+  color: white
+}
+
+/* Calendar */
+
+.booking-calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.centered-calendar {
+  max-width: 400px; /* Set a maximum width for the calendar if needed */
+  width: 100%;
+}
+
+/* Main content styling */
+#main-content {
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Footer styling */
+/* footer {
+  background-color: #4287F5;
+  color: white;
+  text-align: center;
+  text-size-adjust: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+
+} */
+
+/* Footer styling */
+body {
+  margin-bottom: 200px; /* Adjust margin based on the height of your footer */
+}
+
+footer {
+  background-color: #4287F5;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-section {
+  flex: 1; /* Distribute available space equally among sections */
+}
+
+.social-media {
+  flex: 1; /* Distribute available space equally among sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-image {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px;
+  margin-bottom: 5px; /* Adjust spacing between image and text */
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  body {
+    margin-bottom: 0; /* Reset margin for smaller screens */
+  }
+
+  footer {
+    position: relative; /* Reset position for smaller screens */
+  }
+
+  .footer-section, .social-media {
+    width: 100%; /* Take up full width on small screens */
+    margin-bottom: 20px; /* Adjust spacing between sections */
+  }
+
+  .social-image {
+    width: 15px; /* Adjust the size of social images on smaller screens */
+    height: 15px;
+  }
+>>>>>>> Stashed changes
 }
