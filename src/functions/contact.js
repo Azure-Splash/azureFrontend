@@ -8,7 +8,7 @@ async function contact(email,name, phonenumber){
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({email: email, name: name, phonenumber: phonenumber}),
+        body: JSON.stringify({email: email, name: name, phonenumber: phoneNumber, message:message}),
       }
     );
 

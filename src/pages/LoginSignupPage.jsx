@@ -1,6 +1,6 @@
 import {useState} from "react";
-// import {Link} from "react-router-dom";
-// import axios from 'axios'
+import {Link} from "react-router-dom";
+import axios from 'axios'
  import Footer from "../components/Footer";
 import {login} from "../functions/login";
 
@@ -11,14 +11,14 @@ export default function LoginPage(props){
         const[email, setEmail] = useState('')
         const[password, setPassword] = useState('')
 
-        // const handleSubmit = (event) =>{
-        //     event.preventDefault()
+        const handleSubmit = (event) =>{
+            event.preventDefault()
          
-        //     axios.post('http://localhost:3000/loginorsignup', {email,password})
-        //     .then(result => console.log(result))
-        //     .catch(err=>console.log(err))
+            axios.post('http://localhost:3000/loginorsignup', {email,password})
+            .then(result => console.log(result))
+            .catch(err=>console.log(err))
             
-        // }
+        }
 
     return(
 		<div>
@@ -27,7 +27,7 @@ export default function LoginPage(props){
                 Login
                 
             </h1>
-        <form>
+        <form onSubmit={handleSubmit}>
         <div class="form-group">
             <label>
                 <p class="text-left">Email</p>
