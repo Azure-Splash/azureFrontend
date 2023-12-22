@@ -42,12 +42,26 @@ export default function ContactForm(props){
 
             </div>
         <div class="divider"></div>
+        <div class="contact-form-section">
         <img src="mail-icon.png" alt="mail icon" class="mail-icon"/>
+        <div class="contact-form-subtitle">
+            
+            <h2>
+                
+                "We'd love to hear from you! 
+                <div class="d-block mb-3"></div>
+                <p class="contact-form-subtitle-2">Please feel free to leave us a message."</p>
+            
+            </h2>
+        </div>
+        
+        
+        
         <form id="contact-form" class="custom-container rounded custom-border mx-auto">
-        <div class="form-group ">
+        <div class="form-group">
             <label>
                 <p class="text-left">Name:</p>
-                <input class="form-control"
+                <input class="form-control form-control-lg"
                 type="name"
                 value={name}
                 onChange={(event)=>{setName(event.target.value)}} placeholder ="John Doe" />
@@ -56,8 +70,8 @@ export default function ContactForm(props){
         <div class="form-group">
             <label>
                 <p class="text-left">Email:</p>
-                <input  class="form-control"
-                type="email" 
+                <input  class="form-control form-control-lg"
+                type="text" 
                 value={email}
                 onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
             </label>
@@ -65,8 +79,8 @@ export default function ContactForm(props){
         <div class="form-group">
             <label>
                 <p class="text-left">Phone Number: </p>
-                <input class="form-control"
-                type="phoneNumber"
+                <input class="form-control form-control-lg"
+                type="text"
                 value={phoneNumber}
                 onChange={(event)=>{setPhoneNumber(event.target.value)}} placeholder ="000" />
             </label>
@@ -74,10 +88,15 @@ export default function ContactForm(props){
         <div class="form-group">
             <label>
                 <p class="text-left">Message: </p>
-                <input class="form-control"
-                type="message"
-                value={message}
-                onChange={(event)=>{setMessage(event.target.value)}} placeholder ="hi" />
+                <textarea
+                    className="form-control-lg form-control"
+                    rows="5"
+                    id="comment"
+                    placeholder="Hi, please type in your query here."
+                    value={message}
+                    onChange={(event) => { setMessage(event.target.value) }}>
+
+                </textarea>
             </label>
         </div>
        
@@ -87,7 +106,7 @@ export default function ContactForm(props){
             </button>
         </div>
         </form>
-    
+        </div>
         </div>
         )
 
