@@ -6,7 +6,8 @@ import {login} from "../functions/login";
 
 
 
-export default function LoginSignupPage(props){
+
+export default function LoginPage(props){
         const[email, setEmail] = useState('')
         const[password, setPassword] = useState('')
 
@@ -27,69 +28,36 @@ export default function LoginSignupPage(props){
                 
             </h1>
         <form>
+        <div class="form-group">
+            <label>
+                <p class="text-left">Email</p>
+                <input 
+                class="form-control form-control-lg"
+                type="email" 
+                value={email}
+                onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
+            </label>
+        </div>
+        <div class="form-group">
         <label>
-            <p>Email</p>
-            <input 
-            type="email" 
-            value={email}
-            onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
-        </label>
-        <label>
-            <p>Password</p>
-            <input 
+            <p class="text-left">Password</p>
+            <input
+            class="form-control form-control-lg"
             type="password"
             value={password}
             onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
         </label>
-        <div>
-            <button onClick={() => {login(email, password)}}>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info"onClick={() => {login(email, password)}}>
                 Login
             </button>
         </div>
         </form>
-        <div>
-            <h2>
-                OR
-            </h2>
-        </div>
-        <div>
-        <h1>
-                
-                Sign Up
-
-        </h1>  
-        </div>
-        
-        <form>
-        <label>
-            <p>First Name</p>
-            <input type="text" />
-        <label>
-            <p>Last Name</p>
-            <input type="text" />
-        </label>
-        </label>
-        <label>
-            <p>Email</p>
-            <input type="email" />
-        </label>
-        <label>
-            <p>Phone Number</p>
-            <input type="number"/>
-        </label>
-        <label>
-            <p>Password</p>
-            <input type="password" />
-        </label>
-        <label>
-            <p>Re-Enter Password</p>
-            <input type="password" />
-        </label>
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-        </form>
         <Footer/>
+        
 		</div>
 	)
 }
+
+

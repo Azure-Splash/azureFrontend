@@ -207,3 +207,10 @@ textarea{
 .contact-form-subtitle-2{
   padding-left:1.5vh;
 }
+
+@media (max-width:1920px) {
+  #contact-page{
+    width: 100%;
+    min-width: 900px;
+  }
+}
