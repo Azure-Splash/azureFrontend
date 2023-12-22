@@ -175,3 +175,23 @@
   
 
 }
+
+/*Main styling */
+main {
+  border:4vh; 
+}
+
+/* Footer styling */
+footer {
+  background-color: #4287F5;
+  color: black;
+  /* text-align: center; */
+  text-size-adjust: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  /* display: flex; */
+
+}
+

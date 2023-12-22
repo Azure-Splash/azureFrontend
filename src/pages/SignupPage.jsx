@@ -29,56 +29,58 @@ export default function SignupPage(props){
 			<h1>
                 Signup
             </h1>
-        <form>
-        <label>
-            <p>Email</p>
-            <input 
-            type="email" 
-            value={email}
-            onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
-        </label>
-        <label>
-            <p>suburb</p>
-            <input 
-            type="suburb"
-            value={suburb}
-            onChange={(event)=>{setSuburb(event.target.value)}} placeholder ="Melbourne" />
-        </label>
-        <label>
-            <p>phoneNumber</p>
-            <input 
-            type="phoneNumber"
-            value={phoneNumber}
-            onChange={(event)=>{setPhoneNumber(event.target.value)}} placeholder ="000" />
-        </label>
-        <label>
-            <p>First Name</p>
-            <input 
-            type="firstName"
-            value={firstName}
-            onChange={(event)=>{setFirstName(event.target.value)}} placeholder ="John" />
-        </label>
-        <label>
-            <p>Last Name</p>
-            <input 
-            type="lastName"
-            value={lastName}
-            onChange={(event)=>{setLastName(event.target.value)}} placeholder ="Doe" />
-        </label>
-        <label>
-            <p>Password</p>
-            <input 
-            type="password"
-            value={password}
-            onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
-        </label>
+        <main>
+            <form>
+            <label>
+                <p>Email</p>
+                <input 
+                type="email" 
+                value={email}
+                onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
+            </label>
+            <label>
+                <p>suburb</p>
+                <input 
+                type="suburb"
+                value={suburb}
+                onChange={(event)=>{setSuburb(event.target.value)}} placeholder ="Melbourne" />
+            </label>
+            <label>
+                <p>phoneNumber</p>
+                <input 
+                type="phoneNumber"
+                value={phoneNumber}
+                onChange={(event)=>{setPhoneNumber(event.target.value)}} placeholder ="000" />
+            </label>
+            <label>
+                <p>First Name</p>
+                <input 
+                type="firstName"
+                value={firstName}
+                onChange={(event)=>{setFirstName(event.target.value)}} placeholder ="John" />
+            </label>
+            <label>
+                <p>Last Name</p>
+                <input 
+                type="lastName"
+                value={lastName}
+                onChange={(event)=>{setLastName(event.target.value)}} placeholder ="Doe" />
+            </label>
+            <label>
+                <p>Password</p>
+                <input 
+                type="password"
+                value={password}
+                onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
+            </label>
     
-        <div>
-            <button onClick={() => {signup(email, password, suburb, firstName, lastName, phoneNumber)}}>
-                Sign Up
-            </button>
-        </div>
-        </form>
+            <div>
+                <button onClick={() => {signup(email, password, suburb, firstName, lastName, phoneNumber)}}>
+                    Sign Up
+                </button>
+            </div>
+            </form>
+        </main>
     
         <Footer/>
 		</div>
