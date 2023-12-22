@@ -1,4 +1,4 @@
-async function contact(email,name, phonenumber){ 
+async function contact(email,name, phoneNumber, Message){ 
 
     let result = await fetch(
       // process.env.REACT_APP_BACKEND_URL + "/users/login",
@@ -8,7 +8,7 @@ async function contact(email,name, phonenumber){
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({email: email, name: name, phonenumber: phoneNumber, message:message}),
+        body: JSON.stringify({email: email, name: name, phonenumber: phoneNumber, message:Message}),
       }
     );
 
