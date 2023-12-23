@@ -1,4 +1,4 @@
-async function signup(email, password, suburb, firstName, lastName, phoneNumber){ 
+async function signup(email, password, suburb, firstName, lastName, phoneNumber, age){ 
 
     let result = await fetch(
       process.env.REACT_APP_BACKEND_URL + "/users/login",
@@ -8,7 +8,7 @@ async function signup(email, password, suburb, firstName, lastName, phoneNumber)
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({email: email, password: password, suburb: suburb, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber}),
+        body: JSON.stringify({email: email, password: password, suburb: suburb, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, age: age}),
       }
     );
 

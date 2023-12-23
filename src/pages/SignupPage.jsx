@@ -14,6 +14,7 @@ export default function SignupPage(props){
         const[firstName, setFirstName] = useState('')
         const[lastName, setLastName] = useState('')
         const[phoneNumber, setPhoneNumber] = useState('')
+        const[age, setAge] = useState('')
 
 
         // const handleSubmit = (event) =>{
@@ -81,6 +82,14 @@ export default function SignupPage(props){
                 onChange={(event)=>{setLastName(event.target.value)}} placeholder ="Doe" />
             </label>
         </div>
+        <label>
+                <p class="text-left">Age</p>
+                <input 
+                class="form-control form-control-lg"
+                type="age"
+                value={age}
+                onChange={(event)=>{setAge(event.target.value)}} />
+            </label>
         <div class="form-group">
             <label>
                 <p class="text-left">Password</p>
