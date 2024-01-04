@@ -178,10 +178,10 @@
 }
 
 /*Main styling */
-main {
-  padding-bottom: 200px; /* Add padding to the bottom to accommodate the footer */
-  box-sizing: border-box; /* Ensure padding is included in the total height */
-}
+/* main {
+  padding-bottom: 200px; Add padding to the bottom to accommodate the footer
+  box-sizing: border-box; Ensure padding is included in the total height
+} */
 
 /* Added a class to the main container to separate the content from the footer */
 .main-container {
@@ -196,8 +196,10 @@ footer {
   text-align: center;
   position: fixed;
   width: 100%;
-  height: 200px;
-  display: flex;
+  height: 250px;
+  /* padding-bottom: 5px; */
+  bottom: 0px;
+  /* display: flex; */
   flex-direction: row; /* Adjusted to horizontal layout */
   justify-content: space-evenly; /* Spread items evenly */
   /* align-items: center; (maybe don't need this either */
