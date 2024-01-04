@@ -145,35 +145,87 @@
   
 }
 
-.custom-border{
-  border: 3px solid steelblue;
-  padding: 1vh;
-  margin-bottom: 5vh;
+.form{
+  margin:0;
+  padding:0;
+  
 }
+
+/* .custom-border{
+  border: 3px solid steelblue;
+  padding: 10vh;
+  margin-bottom: 5vh;
+} */
 
 .custom-container{
   
-  max-width: 40vh;
-  max-height: 80vh;
+  max-width: 50vh;
+  max-height: 75vh;
+
+
   
 
 }
 
 .form-group label {
-  
-  font-size: 16px;
+  font-size: 1.5vh;
   font-weight: 500;
   color: #333;
-  margin-bottom: 8px;
+
+
+  margin-bottom: 0.5vh;
+  
+  
+}
+
+textarea{
+  min-width:265px;
+
 }
 
 .divider{
   border-bottom:0.5vh solid steelblue;
   margin: 1% 5% 3%;}
 
+.contact-form-section{
+  display:flex;
+  justify-content:space-evenly;
+  
+}
 .mail-icon{
-  max-width: 5vh;
-  padding-bottom:2vh;
+
+  max-width: 65vh;
+  max-height: 30vh;
+  padding-top:10vh;
+  padding-left:350vh;
+  display:flex;
+  padding-left:15vh;
+  
+
+}
+
+.contact-form-subtitle{
+  padding: 14vh 8vh;
+  text-align: start;
+  padding-right: 0vh;
+}
+
+.contact-form-subtitle-2{
+  padding-left:1.5vh;
+}
+
+@media (max-width:1920px) {
+  #contact-page{
+    width: 100%;
+    min-width: 900px;
+  }
+}
+
+footer{
+  width: 100%;
+  max-height:2px;
+  color: black;
+  
 
 }
 

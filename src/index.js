@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
+
 // const express = require("express")
 // const mongoose = require("mongoose")
 // const cors = require("cors")
@@ -12,8 +13,11 @@ import { BrowserRouter } from 'react-router-dom';
 // app.use(express.json())
 // app.use(cors())
 
-// mongoose.connect("")
+// mongoose.connect("mongodb+srv://AzureAdmin:Splash17@azuredb.2qxoahs.mongodb.net/?retryWrites=true&w=majority")
 
+// app.post("/loginorsignup", (req,res)=>{
+
+// })
 // app.listen(3000, ()=>{
 //   console.log("server is up and running")
 // })
