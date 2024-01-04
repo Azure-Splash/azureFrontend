@@ -31,6 +31,7 @@ export default function SignupPage(props){
 			<h1>
                 Sign Up
             </h1>
+
         <form class="custom-container rounded custom-border mx-auto" >
         <div class="form-group">
             <label>
@@ -47,40 +48,51 @@ export default function SignupPage(props){
                 <p class="text-left">Suburb</p>
                 <input 
                 class="form-control form-control-lg"
+
                 type="suburb"
                 value={suburb}
                 onChange={(event)=>{setSuburb(event.target.value)}} placeholder ="Melbourne" />
             </label>
+
+
         </div>
         <div class="form-group">
             <label>
                 <p class="text-left">Phone Number</p>
                 <input 
                 class="form-control form-control-lg"
+
                 type="phoneNumber"
                 value={phoneNumber}
                 onChange={(event)=>{setPhoneNumber(event.target.value)}} placeholder ="000" />
             </label>
+
         </div>
         <div class="form-group">
             <label>
                 <p class="text-left">First Name</p>
                 <input 
                 class="form-control form-control-lg"
+
                 type="firstName"
                 value={firstName}
                 onChange={(event)=>{setFirstName(event.target.value)}} placeholder ="John" />
             </label>
+
+
         </div>
         <div class="form-group">
             <label>
                 <p class="text-left">Last Name</p>
                 <input
                 class="form-control form-control-lg" 
+
                 type="lastName"
                 value={lastName}
                 onChange={(event)=>{setLastName(event.target.value)}} placeholder ="Doe" />
             </label>
+
+
         </div>
         <label>
                 <p class="text-left">Age</p>
@@ -95,10 +107,13 @@ export default function SignupPage(props){
                 <p class="text-left">Password</p>
                 <input 
                 class="form-control form-control-lg"
+
                 type="password"
                 value={password}
                 onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
             </label>
+
+
         </div>
         <div class="form-group">
             <label>
@@ -117,6 +132,7 @@ export default function SignupPage(props){
             </button>
         </div>
         </form>
+
     
         <Footer/>
 		</div>

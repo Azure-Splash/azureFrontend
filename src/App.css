@@ -108,6 +108,8 @@
   
 
 }
+
+/* maybe the following social media class name specific stlying is not needed */
 #social-media-section{
   display:flex;
   
@@ -169,6 +171,8 @@
   font-size: 1.5vh;
   font-weight: 500;
   color: #333;
+
+
   margin-bottom: 0.5vh;
   
   
@@ -176,6 +180,7 @@
 
 textarea{
   min-width:265px;
+
 }
 
 .divider{
@@ -188,6 +193,7 @@ textarea{
   
 }
 .mail-icon{
+
   max-width: 65vh;
   max-height: 30vh;
   padding-top:10vh;
@@ -222,3 +228,56 @@ footer{
   
 
 }
+
+/*Main styling */
+/* main {
+  padding-bottom: 200px; Add padding to the bottom to accommodate the footer
+  box-sizing: border-box; Ensure padding is included in the total height
+} */
+
+/* Added a class to the main container to separate the content from the footer */
+.main-container {
+  min-height: calc(100vh - 200px); /* Adjusted to consider the footer height */
+  position: relative;
+}
+
+/* Footer styling */
+footer {
+  background-color: #4287F5;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 250px;
+  /* padding-bottom: 5px; */
+  bottom: 0px;
+  /* display: flex; */
+  flex-direction: row; /* Adjusted to horizontal layout */
+  justify-content: space-evenly; /* Spread items evenly */
+  /* align-items: center; (maybe don't need this either */
+
+}
+
+
+
+/* Test above code and try to sort footer issues with the above and added main container styling. If still having issues add individual padding */
+/* Add padding to the individual footer items for better spacing */
+/* #contact-title,
+#contact-details,
+#social-media-section {
+  padding: 10px; /* Adjust as needed */
+
+
+/* Footer styling */
+/* footer {
+  background-color: #4287F5;
+  color: white;
+  text-align: center;
+  text-size-adjust: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+
+} */

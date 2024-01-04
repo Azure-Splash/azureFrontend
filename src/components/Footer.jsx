@@ -3,30 +3,34 @@
 function Footer(props){
 	return (
         <footer>
-            <div>
-                <h3>Address:</h3>
-                <h3> 111 Queens Parade</h3>
-            </div>
-            <div>
-                <h3>Phone Number:</h3>
-                <h3>+61448619343 </h3>
-            </div>
-            <div>
-                <h3>Email:</h3>
-                <h3>azuresplash@gmail.com</h3>
-            </div>
-            <div>
-            <div>
-                <h3>Social Media:</h3>
-            </div>
-            <div>
-                <img src="instagramlogo.png" alt="insta"/>
-                <h3> @azuresplash</h3>
-            </div>
-            <div>
-                <img src="facebooklogo.png" alt="facebook"/>
-                <h3> Azure Splash</h3>
-            </div>
+            <div id ="contact-page">
+                <div id ="contact-details" >
+                <div>
+                    <h4>Address:</h4>
+                    <h5> 111 Queens Parade</h5>
+                </div>
+                <div>
+                    <h4>Phone Number:</h4>
+                    <h5>+61448619343 </h5>
+                </div>
+                <div>
+                    <h4>Email:</h4>
+                    <h5>azuresplash@gmail.com</h5>
+                </div>
+                <div>
+                <div id="social-section">
+                    <h4>Social Media:</h4>
+                </div>
+                <div id="social-instagram">
+                    <img src="instagramlogo.png" alt="insta"/>
+                    <h5 id="instagram"> @azuresplash</h5>
+                </div>
+                <div id="social-facebook">
+                    <img src="facebooklogo.png" id="facebook-logo" alt="facebook"/>
+                    <h5 id="facebook"> Azure Splash</h5>
+                </div>
+                </div>
+                </div>
             </div>
                 
             

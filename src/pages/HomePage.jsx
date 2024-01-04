@@ -8,6 +8,9 @@ export default function HomePage(props){
                 Home
                 
             </h1>
+			<main>
+				
+			</main>
 			<Footer/>
 		</div>
 	)

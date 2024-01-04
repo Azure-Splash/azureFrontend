@@ -21,8 +21,10 @@ export default function LoginPage(props){
         }
 
     return(
-		<div>
-			<h1>
+        // added the React.Fragment to allow for multiple elements without introducing an additional wrapping div.
+            <div className="main-container">
+                    <h1>
+
 
                 Login
                 
@@ -57,6 +59,7 @@ export default function LoginPage(props){
         <Footer/>
         
 		</div>
+
 	)
 }
 
