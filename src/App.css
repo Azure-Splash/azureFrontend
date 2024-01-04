@@ -214,3 +214,11 @@ textarea{
     min-width: 900px;
   }
 }
+
+footer{
+  width: 100%;
+  max-height:2px;
+  color: black;
+  
+
+}
