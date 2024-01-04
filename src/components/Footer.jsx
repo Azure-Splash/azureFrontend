@@ -18,16 +18,16 @@ function Footer(props){
                     <h5>azuresplash@gmail.com</h5>
                 </div>
                 <div>
-                <div id="social-media-section">
+                <div id="social-section">
                     <h4>Social Media:</h4>
                 </div>
-                <div id="social-media-instagram">
+                <div id="social-instagram">
                     <img src="instagramlogo.png" alt="insta"/>
-                    <h5 id="instagram-tag"> @azuresplash</h5>
+                    <h5 id="instagram"> @azuresplash</h5>
                 </div>
-                <div id="social-media-facebook">
+                <div id="social-facebook">
                     <img src="facebooklogo.png" id="facebook-logo" alt="facebook"/>
-                    <h5 id="facebook-name"> Azure Splash</h5>
+                    <h5 id="facebook"> Azure Splash</h5>
                 </div>
                 </div>
                 </div>

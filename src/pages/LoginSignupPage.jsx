@@ -20,76 +20,80 @@ export default function LoginSignupPage(props){
         // }
 
     return(
-		<div>
-			<h1>
+        // added the React.Fragment to allow for multiple elements without introducing an additional wrapping div.
+        <>
+            <div className="main-container">
+                    <h1>
 
-                Login
-                
-            </h1>
-        <form>
-        <label>
-            <p>Email</p>
-            <input 
-            type="email" 
-            value={email}
-            onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
-        </label>
-        <label>
-            <p>Password</p>
-            <input 
-            type="password"
-            value={password}
-            onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
-        </label>
-        <div>
-            <button onClick={() => {login(email, password)}}>
-                Login
-            </button>
-        </div>
-        </form>
-        <div>
-            <h2>
-                OR
-            </h2>
-        </div>
-        <div>
-        <h1>
-                
-                Sign Up
+                    Login
+                    
+                    </h1>
+                <form>
+                <label>
+                    <p>Email</p>
+                    <input 
+                    type="email" 
+                    value={email}
+                    onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
+                </label>
+                <label>
+                    <p>Password</p>
+                    <input 
+                    type="password"
+                    value={password}
+                    onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
+                </label>
+                <div>
+                    <button onClick={() => {login(email, password)}}>
+                        Login
+                    </button>
+                </div>
+                </form>
+                <div>
+                    <h2>
+                        OR
+                    </h2>
+                </div>
+                <div>
+                <h1>
+                    
+                    Sign Up
 
-        </h1>  
-        </div>
-        
-        <form>
-        <label>
-            <p>First Name</p>
-            <input type="text" />
-        <label>
-            <p>Last Name</p>
-            <input type="text" />
-        </label>
-        </label>
-        <label>
-            <p>Email</p>
-            <input type="email" />
-        </label>
-        <label>
-            <p>Phone Number</p>
-            <input type="number"/>
-        </label>
-        <label>
-            <p>Password</p>
-            <input type="password" />
-        </label>
-        <label>
-            <p>Re-Enter Password</p>
-            <input type="password" />
-        </label>
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-        </form>
-        <Footer/>
-		</div>
+                </h1>  
+                </div>
+            
+                <form>
+                <label>
+                    <p>First Name</p>
+                    <input type="text" />
+                <label>
+                    <p>Last Name</p>
+                    <input type="text" />
+                </label>
+                </label>
+                <label>
+                    <p>Email</p>
+                    <input type="email" />
+                </label>
+                <label>
+                    <p>Phone Number</p>
+                    <input type="number"/>
+                </label>
+                <label>
+                    <p>Password</p>
+                    <input type="password" />
+                </label>
+                <label>
+                    <p>Re-Enter Password</p>
+                    <input type="password" />
+                </label>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                </form>
+            </div>
+            <Footer />
+        </>
+
 	)
 }
