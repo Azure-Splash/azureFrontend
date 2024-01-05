@@ -6,7 +6,7 @@ export default function AboutPage(props){
                 
                     <h1>
 
-                        About
+                        Welcome to Azure Splash!
                         
                     </h1>
                     <h5>

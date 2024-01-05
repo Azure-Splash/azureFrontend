@@ -14,8 +14,8 @@ export default function HeaderCarousel() {
 
         />
         <Carousel.Caption>
-          <h5>label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Indoor Pool</h5>
+          <p>Our climate-controlled indoor pools have six lanes, available for both fitness and recreational enthusiasts.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,8 +27,8 @@ export default function HeaderCarousel() {
           height={356}
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Outdoor Pool</h5>
+          <p>Six lanes under the bright blue skies, perfect for dips under the radiant sun</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -40,9 +40,8 @@ export default function HeaderCarousel() {
           height={356}
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Join us at Azure Splash at 111 Queens Parade, Carlton 3205.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
