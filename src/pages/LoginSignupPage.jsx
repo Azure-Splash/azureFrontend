@@ -1,66 +1,68 @@
-import {useState} from "react";
-// import {Link} from "react-router-dom";
-import axios from 'axios'
- import Footer from "../components/Footer";
-import {login} from "../functions/login";
+import { useState } from "react";
+import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
+export default function LoginPage() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
+  const handleLoginSubmit = async (event) => {
+    event.preventDefault();
 
-
-export default function LoginPage(props){
-        const[email, setEmail] = useState('')
-        const[password, setPassword] = useState('')
-
-        const handleSubmit = (event) =>{
-            event.preventDefault()
-         
-            axios.post('http://localhost:3000/loginorsignup', {email,password})
-            .then(result => console.log(result))
-            .catch(err=>console.log(err))
-            
-        }
-
-    return(
-        // added the React.Fragment to allow for multiple elements without introducing an additional wrapping div.
-            <div className="main-container">
-                    <h1>
-
-
-                Login
-                
-            </h1>
-        <form onSubmit={handleSubmit}>
-        <div class="form-group">
-            <label>
-                <p class="text-left">Email</p>
-                <input 
-                class="form-control form-control-lg"
-                type="email" 
-                value={email}
-                onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
-            </label>
-        </div>
-        <div class="form-group">
-        <label>
-            <p class="text-left">Password</p>
-            <input
-            class="form-control form-control-lg"
-            type="password"
-            value={password}
-            onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
-        </label>
-        </div>
-        <div class="form-group">
-            <button class="btn btn-info"onClick={() => {login(email, password)}}>
-                Login
-            </button>
-        </div>
-        </form>
-        <Footer/>
+    try {
+      const response = axios.post('https://azures-splash-8d7c939ebec7.herokuapp.com/users/login', { email, password }, {
+        withCredentials: true,
+      })
         
-		</div>
+      if (response.data.token) {
+        // Save the token to localStorage
+        localStorage.setItem('token', response.data.token);
 
-	)
+        // Redirect to the booking page
+        navigate('/booking');
+      } else {
+        console.error('Login failed');
+        // Handle login failure, show an error message, etc.
+      }
+    } catch (error) {
+      console.error('Error during login', error);
+      // Handle error, show an error message, etc.
+    }
+  };
+
+  return (
+    <div className="main-container">
+      <h1>Login</h1>
+      <form onSubmit={handleLoginSubmit}>
+        <div className="form-group">
+          <label>
+            <p className="text-left">Email</p>
+            <input
+              className="form-control form-control-lg"
+              type="email"
+              value={email}
+              onChange={(event) => { setEmail(event.target.value) }} placeholder="*****@gmail.com" />
+          </label>
+        </div>
+        <div className="form-group">
+          <label>
+            <p className="text-left">Password</p>
+            <input
+              className="form-control form-control-lg"
+              type="password"
+              value={password}
+              onChange={(event) => { setPassword(event.target.value) }} placeholder="******" />
+          </label>
+        </div>
+        <div className="form-group" />
+        <button type="submit" className="btn btn-info">
+          Login
+        </button>
+      </form>
+    </div>
+  );
 }
+
 
 

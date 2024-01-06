@@ -4,7 +4,7 @@ async function login(email, password){
     console.log(process.env.REACT_APP_BACKEND_URL)
 
     let result = await fetch(
-      process.env.REACT_APP_BACKEND_URL + "/users/login",
+      'https://azures-splash-8d7c939ebec7.herokuapp.com/users/login',
       // "http://localhost:3005/users/login",
       {
         method: "POST", // or 'PUT'
