@@ -119,6 +119,7 @@ export default function ContactForm(props){
         </div>
         </form>
         </div>
+        <Footer />
         </div>
         )
 
