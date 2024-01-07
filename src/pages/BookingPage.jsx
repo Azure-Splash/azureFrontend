@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import Footer from "../components/Footer";
 
 export default function BookingPage() {
   const [date, setDate] = useState(new Date());
@@ -79,6 +80,7 @@ export default function BookingPage() {
   };
 
   return (
+    <div>
     <div className="booking-calendar-container">
       <h1>Booking Calendar</h1>
       <button onClick={handleLogout}>Logout</button>
@@ -124,6 +126,9 @@ export default function BookingPage() {
         <p>Selected Pool: {selectedPool}</p>
         <p>Selected Lane: {selectedLane}</p>
       </div>
+      <Footer />
     </div>
+    </div>
+  
   );
 }
