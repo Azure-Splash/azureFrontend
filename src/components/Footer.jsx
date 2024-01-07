@@ -3,7 +3,7 @@
 function Footer(props){
 	return (
         <footer>
-            <div id="contact-page">
+            <address>
                 <div id="contact-details" >
                     <div id="address">
                         <h4>Address:</h4>
@@ -31,7 +31,7 @@ function Footer(props){
                         </div>
                     </div>
                 </div>
-            </div>
+            </address>
                 
             
             
