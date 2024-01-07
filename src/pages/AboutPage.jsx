@@ -2,13 +2,13 @@ import Footer from "../components/Footer"
 
 export default function AboutPage(props){
         return (
-            <div>
-                
+              <div>
+                <div className="main-container">
                     <h1>
                         <br></br>
 
-                        About
-                        
+                            About
+        
                     </h1>
 
                     <div class="aboutcontainer">
@@ -82,12 +82,8 @@ export default function AboutPage(props){
                     </div>
                     </div>
                     </div>
-                    <Footer/>
-                <main>
-                </main>    
+                    <Footer/>  
             </div>
-           
-            
         )
 }
     

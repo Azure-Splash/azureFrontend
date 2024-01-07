@@ -27,10 +27,11 @@ export default function SignupPage(props){
         // }
 
     return(
-		<div>
-			<h1>
+        <div>
+            <div className="main-container">
+			        <h1>
                 Sign Up
-            </h1>
+              </h1>
 
         <form class="custom-container rounded custom-border mx-auto" >
         <div class="form-group">
@@ -132,8 +133,7 @@ export default function SignupPage(props){
             </button>
         </div>
         </form>
-
-    
+        </div>
         <Footer/>
 		</div>
 	)

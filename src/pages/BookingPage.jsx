@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Footer from "../components/Footer";
 // import {Link} from "react-router-dom";
 // import axios from 'axios'
 // import Footer from "../components/Footer";
@@ -6,6 +7,7 @@ import Calendar from 'react-calendar';
 // import TimePicker from 'react-time-picker';
 import 'react-calendar/dist/Calendar.css';
 import 'react-time-picker/dist/TimePicker.css';
+
 
 
 // type ValuePiece = Date | null;
@@ -28,25 +30,28 @@ export default function BookingPage() {
     }
   
     return (
-        <div className="booking-calendar-container">
-          <h1>Booking Calendar</h1>
-          <div className="centered-calendar">
-            <Calendar onChange={handleDateChange} value={date} />
+        <div>
+          <div className="booking-calendar-container">
+            <h1>Booking Calendar</h1>
+            <div className="centered-calendar">
+              <Calendar onChange={handleDateChange} value={date} />
+            </div>
+            <div>
+              <label>Select Time: </label>
+              <select value={selectedTime} onChange={(e) => handleTimeChange(e.target.value)}>
+                {presetTimes.map((time) => (
+                  <option key={time} value={time}>
+                    {time}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <p>Selected Date: {date.toDateString()}</p>
+              <p>Selected Time: {selectedTime}</p>
+            </div>
           </div>
-          <div>
-            <label>Select Time: </label>
-            <select value={selectedTime} onChange={(e) => handleTimeChange(e.target.value)}>
-              {presetTimes.map((time) => (
-                <option key={time} value={time}>
-                  {time}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <p>Selected Date: {date.toDateString()}</p>
-            <p>Selected Time: {selectedTime}</p>
-          </div>
+          <Footer/>
         </div>
       );
     }
