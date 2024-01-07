@@ -23,17 +23,19 @@ export default function LoginPage(props){
 
     return(
         // added the React.Fragment to allow for multiple elements without introducing an additional wrapping div.
-            <div className="main-container">
-                    <h1>
+        <div className="main-container">
+            <h1>
+                <br></br>
 
 
                 Login
                 
             </h1>
         <form onSubmit={handleSubmit}>
+            <br></br>
         <div class="form-group">
             <label>
-                <p class="text-left">Email</p>
+                <h6 class="text-left">Email</h6>
                 <input 
                 class="form-control form-control-lg"
                 type="email" 
@@ -43,16 +45,18 @@ export default function LoginPage(props){
         </div>
         <div class="form-group">
         <label>
-            <p class="text-left">Password</p>
+            <h6 class="text-left">Password</h6>
+            <div class="col-m-10">
             <input
             class="form-control form-control-lg"
             type="password"
             value={password}
             onChange={(event)=>{setPassword(event.target.value)}} placeholder ="******" />
+            </div>
         </label>
         </div>
         <div class="form-group">
-            <button class="btn btn-info"onClick={() => {login(email, password)}}>
+            <button class="btn btn-info text-left" onClick={() => {login(email, password)}}>
                 Login
             </button>
         </div>

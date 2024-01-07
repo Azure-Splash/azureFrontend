@@ -31,49 +31,19 @@ export default function SignupPage(props){
     return(
         <div class="registersection">
 		<div>
+            <br></br>
 			<h1>
                 Sign Up
             </h1>
-
+        <br></br>
+        
         <form class="custom-container rounded custom-border mx-auto" >
+
+    
         <div class="form-group">
-            <label>
-                <p class="text-left">Email</p>
-                <input class="form-control form-control-lg"
-                type="email" 
-                value={email}
-                onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
             
-            </label>
-        </div>
-        <div class="form-group">
             <label>
-                <p class="text-left">Suburb</p>
-                <input 
-                class="form-control form-control-lg"
-
-                type="suburb"
-                value={suburb}
-                onChange={(event)=>{setSuburb(event.target.value)}} placeholder ="Melbourne" />
-            </label>
-
-
-        </div>
-        <div class="form-group">
-            <label>
-                <p class="text-left">Phone Number</p>
-                <input 
-                class="form-control form-control-lg"
-
-                type="phoneNumber"
-                value={phoneNumber}
-                onChange={(event)=>{setPhoneNumber(event.target.value)}} placeholder ="000" />
-            </label>
-
-        </div>
-        <div class="form-group">
-            <label>
-                <p class="text-left">First Name</p>
+                <h6 class="text-left">First Name</h6>
                 <input 
                 class="form-control form-control-lg"
 
@@ -86,7 +56,7 @@ export default function SignupPage(props){
         </div>
         <div class="form-group">
             <label>
-                <p class="text-left">Last Name</p>
+                <h6 class="text-left">Last Name</h6>
                 <input
                 class="form-control form-control-lg" 
 
@@ -98,18 +68,58 @@ export default function SignupPage(props){
 
         </div>
         <div class="form-group">
+            <label>
+                <h6 class="text-left">Email</h6>
+                <input class="form-control form-control-lg"
+                type="email" 
+                value={email}
+                onChange={(event)=>{setEmail(event.target.value)}} placeholder ="*****@gmail.com" />
+            
+            </label>
+        
+        </div>
+        
+        <div class="form-group">
+
+            <label>
+                <h6 class="text-left">Phone Number</h6>
+                <input 
+                class="form-control form-control-lg"
+
+                type="phoneNumber"
+                value={phoneNumber}
+                onChange={(event)=>{setPhoneNumber(event.target.value)}} placeholder ="000" />
+            </label>
+
+        </div>
+        <div class="form-group">
+            <label>
+                <h6 class="text-left">Suburb</h6>
+                <input 
+                class="form-control form-control-lg"
+
+                type="suburb"
+                value={suburb}
+                onChange={(event)=>{setSuburb(event.target.value)}} placeholder ="Melbourne" />
+            </label>
+
+
+        </div>
+        
+        <div class="form-group">
         <label>
-                <p class="text-left">Age</p>
+                <h6 class="text-left">Age</h6>
                 <input 
                 class="form-control form-control-lg"
                 type="age"
                 value={age}
+                placeholder="23"
                 onChange={(event)=>{setAge(event.target.value)}} />
             </label>
         </div>
         <div class="form-group">
             <label>
-                <p class="text-left">Password</p>
+                <h6 class="text-left">Password</h6>
                 <input 
                 class="form-control form-control-lg"
 
@@ -122,7 +132,7 @@ export default function SignupPage(props){
         </div>
         <div class="form-group">
             <label>
-                <p class="text-left">Re-Enter Password</p>
+                <h6 class="text-left">Re-Enter Password</h6>
                 <input 
                 class="form-control form-control-lg"
                 type="password"
