@@ -49,7 +49,6 @@
 
 }
 
-
 .navimage{
   position: absolute;
   top: 0;
@@ -92,6 +91,7 @@
 #contact-title{
   padding-top: 4vh;
 }
+
 #contact-details{
 
   display:flex;
@@ -104,22 +104,17 @@
   padding-bottom: 0vh;
   margin-bottom: 0vh;
   
-  
-
 }
 
 /* maybe the following social media class name specific stlying is not needed */
 #social-media-section{
   display:flex;
   
-  
 }
 
 #social-media-instagram{
   display:flex;
   padding:1vh;
-
-  
 }
 
 #social-media-facebook{
@@ -127,8 +122,6 @@
   align-content: center;
   justify-content: space-evenly;
   padding: 1vh
-
-  
 }
 
 #instagram-tag{
@@ -161,19 +154,13 @@
   max-width: 50vh;
   max-height: 75vh;
 
-
-  
-
 }
 
 .form-group label {
   font-size: 1.5vh;
   font-weight: 500;
   color: #333;
-
-
   margin-bottom: 0.5vh;
-  
   
 }
 
@@ -184,22 +171,21 @@ textarea{
 
 .divider{
   border-bottom:0.5vh solid steelblue;
-  margin: 1% 5% 3%;}
+  margin: 1% 5% 3%;
+}
 
 .contact-form-section{
   display:flex;
   justify-content:space-evenly;
-  
+  padding-bottom: 50px;
 }
 .mail-icon{
-
   max-width: 65vh;
   max-height: 30vh;
   padding-top:10vh;
   padding-left:350vh;
   display:flex;
-  padding-left:15vh;
-  
+  padding-left:15vh; 
 
 }
 
@@ -220,19 +206,6 @@ textarea{
   }
 }
 
-footer{
-  width: 100%;
-  /* max-height:2px; */
-  color: black;
-  
-
-}
-
-/*Main styling */
-/* main {
-  padding-bottom: 200px; Add padding to the bottom to accommodate the footer
-  box-sizing: border-box; Ensure padding is included in the total height
-} */
 
 /* Added a class to the main container to separate the content from the footer */
 .main-container {
@@ -266,80 +239,8 @@ footer {
 
 }
 
-/* Media query for screens up to 470 pixels */
-@media screen and (max-width: 470px) {
-  .main-container {
-    padding-bottom: 100px; /* Adjust the value for smaller screens */
-    max-width: 100%; /* Adjust the value for smaller screens */
-  }
-
-  main {
-    max-width: 100%; /* Adjust the value for smaller screens */
-  }
-
-  .nav-item {
-    height: auto; /* Adjust the height for smaller screens */
-    flex-direction: column; /* Stack navigation items vertically */
-  }
-
-  .navimage {
-    position: static; /* Reset the position for smaller screens */
-    height: auto; /* Adjust the height for smaller screens */
-    margin-left: 0; /* Reset margin for smaller screens */
-    margin-bottom: 10px; /* Add space between navigation items for smaller screens */
-  }
-
-  .nav-item a {
-    height: auto; /* Adjust the height for smaller screens */
-    padding: 10px; /* Add padding to navigation items for better spacing on smaller screens */
-    margin-right: 0; /* Reset margin for smaller screens */
-  }
-
-  footer {
-    height: 400px; /* Adjust the height for smaller screens */
-    flex-direction: column; /* Stack footer items vertically */
-    align-items: center;
-    font-size: smaller;
-    /* display: flex; */
-  }
-
-
-  /* Had to adjust the individual elements within the footer for better scaling */
-  #contact-details {
-    flex-direction: column;
-    align-items: center;
-    font-size: smaller;
-    text-align: center;
-    padding-bottom: 10px; 
-    /* Adjust padding for better spacing on smaller screens */ 
-    /* Center text within the contact details on smaller screens */
-  }
-
-  #address,
-  #phone,
-  #email,
-  #social-section {
-    margin-bottom: 10px; /* Add space between contact details on smaller screens */
-  }
-
-  #social-instagram,
-  #social-facebook {
-    margin-bottom: 10px; /* Add space between social media items on smaller screens */
-  }
-
-  #social-instagram img,
-  #social-facebook img {
-    max-width: 30px; /* Adjust the size of social media icons on smaller screens */
-    margin-right: 5px; /* Add space between icon and text on smaller screens */
-  }
-}
-
 .aboutcontainer{
-  
-  flex-direction: column;
-  
-  
-  
+  flex-direction: column; 
 }
 
 .abouttext{
@@ -374,12 +275,163 @@ footer {
 }
 .aboutsection2{
   display:flex;
+  flex-direction: column;
   align-items: center;
   max-width:1000px;
-  margin-left:220px;
-  text-align: left;
+  /* margin-left:220px; */
+  text-align: center;
   margin-bottom:120px;
 }
 .comingsoondescription{
   margin-left:25px;
+}
+
+
+/* Media query for screens up to 470 pixels */
+@media screen and (max-width: 470px) {
+  .main-container {
+    padding-bottom: 100px; /* Adjust the value for smaller screens */
+    max-width: 100%; /* Adjust the value for smaller screens */
+  }
+
+  main {
+    max-width: 100%; /* Adjust the value for smaller screens */
+  }
+
+  .nav-item {
+    height: auto; /* Adjust the height for smaller screens */
+    flex-direction: column; /* Stack navigation items vertically */
+    max-width: 100%;
+  }
+
+  .navimage {
+    position: static; /* Reset the position for smaller screens */
+    height: auto; /* Adjust the height for smaller screens */
+    margin-left: 0; /* Reset margin for smaller screens */
+    margin-bottom: 10px; /* Add space between navigation items for smaller screens */
+  }
+
+  .nav-item a {
+    height: auto; /* Adjust the height for smaller screens */
+    padding: 10px; /* Add padding to navigation items for better spacing on smaller screens */
+    margin-right: 0; /* Reset margin for smaller screens */
+  }
+
+  footer {
+    height: 420px; /* Adjust the height for smaller screens */
+    flex-direction: column; /* Stack footer items vertically */
+    align-items: center;
+    font-size: smaller;
+    max-width: 100%;
+    /* display: flex; */
+  }
+
+
+  /* Had to adjust the individual elements within the footer for better scaling */
+  #contact-details {
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+    text-align: center;
+    /* padding: 5px;  */
+    /* Adjust padding for better spacing on smaller screens */ 
+    /* Center text within the contact details on smaller screens */
+  }
+
+  #address,
+  #phone,
+  #email,
+  #social-section {
+    margin-bottom: 10px; /* Add space between contact details on smaller screens */
+  }
+
+  #social-instagram,
+  #social-facebook {
+    margin-bottom: 10px; /* Add space between social media items on smaller screens */
+  }
+
+  #social-instagram img,
+  #social-facebook img {
+    max-width: 30px; /* Adjust the size of social media icons on smaller screens */
+    margin-right: 5px; /* Add space between icon and text on smaller screens */
+  }
+
+  .aboutsection2 {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+
+  .saunaimg {
+    max-width: 100%; /* Make the image take up the full width of its container */
+    margin-bottom: 20px; /* Add space between image and text on smaller screens */
+  }
+
+  .col-md-5 {
+    width: 100%; /* Make each column take up the full width on smaller screens */
+    margin-bottom: 20px; /* Add space between image and text on smaller screens */
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divider {
+    margin: 2% 5%; /* Adjust the divider margin for smaller screens */
+  }
+  
+  .contact-form-section {
+    flex-direction: column; /* Stack contact form items vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+  }
+  
+  .mail-icon {
+    max-width: 50%; /* Adjust the max-width of the mail icon to avoid cutting off text */
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  .contact-form-subtitle {
+    padding: 10vh 2vh; /* Adjust padding for subtitle on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+  
+  .contact-form-subtitle-2 {
+    padding: 0 2vh; /* Adjust padding for subtitle-2 on smaller screens */
+  }
+  
+  .custom-container {
+    max-width: 80%; /* Make the contact form container take up 80% of the width on smaller screens */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .form-group {
+    width: 80%; /* Make each form group take up 80% of the width on smaller screens */
+    margin: 0 auto 10px; /* Adjust margin between form groups on smaller screens and center them */
+  }
+  
+  /* Ensures images and text don't overflow */
+  .contact-page img,
+  .contact-page h2,
+  .contact-page h4,
+  .contact-page h5,
+  .contact-page p,
+  .contact-page textarea {
+    max-width: 100%; /* Take up full width */
+  }
+  
+  /* Adjust font sizes using relative units */
+  .contact-page h2 {
+    font-size: .5em; /* Adjust as needed */
+  }
+  
+  .contact-page h4,
+  .contact-page h5,
+  .contact-page p,
+  .contact-page textarea {
+    font-size: .5em; /* Adjust as needed */
+  }
+
 }
