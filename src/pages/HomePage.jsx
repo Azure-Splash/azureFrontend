@@ -3,14 +3,16 @@ import Footer from "../components/Footer";
 export default function HomePage(props){
 	return(
 		<div>
-			<h1>
+			<div className="main-container">
+				<h1>
 
-                Home
-                
-            </h1>
-			<main>
-				
-			</main>
+					Home
+					
+				</h1>
+				<main>
+					
+				</main>
+			</div>
 			<Footer/>
 		</div>
 	)

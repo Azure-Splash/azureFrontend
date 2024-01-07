@@ -3,18 +3,19 @@ import Footer from "../components/Footer"
 export default function AboutPage(props){
         return (
             <div>
-                
-                    <h1>
+                <div className="main-container">
+                    
+                        <h1>
 
-                        About
+                            About
+                            
+                        </h1>
                         
-                    </h1>
-                    <Footer/>
-                <main>
-                </main>    
+                    <main>
+                    </main>    
+                </div>
+                <Footer/>
             </div>
-           
-            
         )
 }
     
