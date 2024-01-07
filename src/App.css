@@ -244,11 +244,13 @@ footer {
   }
 
   footer {
-    height: auto; /* Adjust the height for smaller screens */
+    height: 400px; /* Adjust the height for smaller screens */
     flex-direction: column; /* Stack footer items vertically */
     align-items: center;
+    font-size: smaller;
     /* display: flex; */
   }
+
 
   /* Had to adjust the individual elements within the footer for better scaling */
   #contact-details {
@@ -256,7 +258,7 @@ footer {
     align-items: center;
     font-size: smaller;
     text-align: center;
-    /* padding: 10px;  */
+    padding-bottom: 10px; 
     /* Adjust padding for better spacing on smaller screens */ 
     /* Center text within the contact details on smaller screens */
   }
