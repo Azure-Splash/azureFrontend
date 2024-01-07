@@ -82,8 +82,14 @@ export default function AboutPage(props){
                     </div>
                     </div>
                     </div>
-                    <Footer/>  
-            </div>
+                    </div>
+                    <Footer />
+                    </div>
+                   
+                   
+
+                
+           
         )
-}
+        }
     

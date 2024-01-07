@@ -54,6 +54,7 @@ export default function LoginPage(props){
             </button>
         </div>
         </form>
+        </div>
         <Footer/>
         
 		</div>

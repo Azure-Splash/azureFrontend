@@ -34,6 +34,7 @@ export default function HomePage(props){
 				
 				<p class ="comingsoondescription"> We are opening up a sauna in March 2024, adjacent to the indoor swimming pool. This is the perfect opportunity to release any tension, and improve cardiovascular health.</p>
 			</div>
+			</div>
 			<Footer/>
 		</div>
 	)
