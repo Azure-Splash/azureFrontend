@@ -29,7 +29,8 @@ export default function SignupPage(props){
         // }
 
     return(
-        <div class="registersection">
+
+        <div class="registersection main-container">
 		<div>
             <br></br>
 			<h1>
@@ -37,6 +38,7 @@ export default function SignupPage(props){
             </h1>
         <br></br>
         
+
         <form class="custom-container rounded custom-border mx-auto" >
 
     
@@ -148,7 +150,9 @@ export default function SignupPage(props){
             <p>Already have an account? <Link to="/loginorsignup"> Log in here. </Link></p>
         </div>
         </form>
+
        
+
         </div>
         <Footer/>
 		</div>

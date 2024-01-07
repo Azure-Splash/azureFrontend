@@ -50,7 +50,6 @@
 }
 
 
-
 .navimage{
   position: absolute;
   top: 0;
@@ -223,7 +222,7 @@ textarea{
 
 footer{
   width: 100%;
-  max-height:2px;
+  /* max-height:2px; */
   color: black;
   
 
@@ -238,7 +237,16 @@ footer{
 /* Added a class to the main container to separate the content from the footer */
 .main-container {
   min-height: calc(100vh - 200px); /* Adjusted to consider the footer height */
+  padding-bottom: 200px;
   position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Footer styling */
@@ -246,7 +254,7 @@ footer {
   background-color: #4287F5;
   color: white;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 250px;
   /* padding-bottom: 5px; */
@@ -258,29 +266,73 @@ footer {
 
 }
 
+/* Media query for screens up to 470 pixels */
+@media screen and (max-width: 470px) {
+  .main-container {
+    padding-bottom: 100px; /* Adjust the value for smaller screens */
+    max-width: 100%; /* Adjust the value for smaller screens */
+  }
+
+  main {
+    max-width: 100%; /* Adjust the value for smaller screens */
+  }
+
+  .nav-item {
+    height: auto; /* Adjust the height for smaller screens */
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  .navimage {
+    position: static; /* Reset the position for smaller screens */
+    height: auto; /* Adjust the height for smaller screens */
+    margin-left: 0; /* Reset margin for smaller screens */
+    margin-bottom: 10px; /* Add space between navigation items for smaller screens */
+  }
+
+  .nav-item a {
+    height: auto; /* Adjust the height for smaller screens */
+    padding: 10px; /* Add padding to navigation items for better spacing on smaller screens */
+    margin-right: 0; /* Reset margin for smaller screens */
+  }
+
+  footer {
+    height: 400px; /* Adjust the height for smaller screens */
+    flex-direction: column; /* Stack footer items vertically */
+    align-items: center;
+    font-size: smaller;
+    /* display: flex; */
+  }
 
 
-/* Test above code and try to sort footer issues with the above and added main container styling. If still having issues add individual padding */
-/* Add padding to the individual footer items for better spacing */
-/* #contact-title,
-#contact-details,
-#social-media-section {
-  padding: 10px; /* Adjust as needed */
+  /* Had to adjust the individual elements within the footer for better scaling */
+  #contact-details {
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+    text-align: center;
+    padding-bottom: 10px; 
+    /* Adjust padding for better spacing on smaller screens */ 
+    /* Center text within the contact details on smaller screens */
+  }
 
+  #address,
+  #phone,
+  #email,
+  #social-section {
+    margin-bottom: 10px; /* Add space between contact details on smaller screens */
+  }
 
-/* Footer styling */
-/* footer {
-  background-color: #4287F5;
-  color: white;
-  text-align: center;
-  text-size-adjust: auto;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  display: flex;
+  #social-instagram,
+  #social-facebook {
+    margin-bottom: 10px; /* Add space between social media items on smaller screens */
+  }
 
-} */
+  #social-instagram img,
+  #social-facebook img {
+    max-width: 30px; /* Adjust the size of social media icons on smaller screens */
+    margin-right: 5px; /* Add space between icon and text on smaller screens */
+  }
+}
 
 .aboutcontainer{
   
@@ -331,8 +383,4 @@ footer {
 }
 .comingsoondescription{
   margin-left:25px;
-}
-
-.registersection{
-  margin-bottom:400px;
 }

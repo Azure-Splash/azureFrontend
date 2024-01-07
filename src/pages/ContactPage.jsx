@@ -1,5 +1,6 @@
 import contact from "../functions/contact";
 import React, { useState} from "react";
+import Footer from "../components/Footer"
 
 export default function ContactForm(props){
     
@@ -118,6 +119,7 @@ export default function ContactForm(props){
         </div>
         </form>
         </div>
+        <Footer />
         </div>
         )
 

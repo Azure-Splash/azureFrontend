@@ -23,14 +23,13 @@ export default function LoginPage(props){
 
     return(
         // added the React.Fragment to allow for multiple elements without introducing an additional wrapping div.
-        <div className="main-container">
-            <h1>
-                <br></br>
 
+            <div>
+                <div className="main-container">
+                        <h1>
+                          Login
+                        </h1>
 
-                Login
-                
-            </h1>
         <form onSubmit={handleSubmit}>
             <br></br>
         <div class="form-group">
@@ -61,11 +60,14 @@ export default function LoginPage(props){
             </button>
         </div>
         </form>
+
         <p>Don't have an account? <Link to="/signup"> Sign up here. </Link></p>
+
+        </div>
+
         <Footer/>
         
 		</div>
-
 	)
 }
 
