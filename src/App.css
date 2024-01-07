@@ -285,7 +285,8 @@ footer {
 .aboutcontainer{
   
   flex-direction: column;
-  
+  max-width:1400px;
+  margin-left:60px;
   
   
 }
@@ -330,4 +331,8 @@ footer {
 }
 .comingsoondescription{
   margin-left:25px;
+}
+
+.registersection{
+  margin-bottom:400px;
 }

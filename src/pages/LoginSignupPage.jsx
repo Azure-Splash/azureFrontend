@@ -3,6 +3,7 @@ import {useState} from "react";
 import axios from 'axios'
  import Footer from "../components/Footer";
 import {login} from "../functions/login";
+import {Link} from "react-router-dom";
 
 
 
@@ -56,6 +57,7 @@ export default function LoginPage(props){
             </button>
         </div>
         </form>
+        <p>Don't have an account? <Link to="/signup"> Sign up here. </Link></p>
         <Footer/>
         
 		</div>

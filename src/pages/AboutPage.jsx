@@ -10,6 +10,7 @@ export default function AboutPage(props){
                         About
                         
                     </h1>
+                    <br></br>
 
                     <div class="aboutcontainer">
                     <div class="col-md-5">
@@ -65,7 +66,7 @@ export default function AboutPage(props){
 
                             <div>
                             <br></br>
-                            How to create a booking?
+                            <u>How to create a booking?</u>
                             <br></br>
                             <br></br>
                             

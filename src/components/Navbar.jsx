@@ -10,7 +10,7 @@ export default function Navbar(props){
         <Nav variant="tabs" defaultActiveKey="/home">
 			<NavItem>
 					<NavLink to="/" >
-						Home
+						Home 
 					</NavLink>
 					<NavLink to="/about">
 						About
@@ -23,16 +23,14 @@ export default function Navbar(props){
 					<NavLink to="/contact"  >
 						Contact
 					</NavLink>
-
-					<NavLink to="/loginorsignup"  >
-						Login/Sign Up
-					</NavLink>
-
-					<NavLink to="/signup"  >
-						Sign Up
-					</NavLink>
 					<NavLink to="/booking"  >
 						Bookings
+					</NavLink>
+					<NavLink to="/loginorsignup">
+						Login/Sign Up
+					</NavLink>
+					<NavLink to="/signup">
+						
 					</NavLink>
 			</NavItem>
 			<img class="navimage" src="../azuresplashlogo.png" alt="azure splash logo"/>

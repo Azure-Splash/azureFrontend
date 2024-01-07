@@ -3,6 +3,8 @@ import {useState} from "react";
 // import axios from 'axios'
 import Footer from "../components/Footer";
 import {signup} from "../functions/signup";
+import {Link} from "react-router-dom";
+
 
 
 
@@ -27,6 +29,7 @@ export default function SignupPage(props){
         // }
 
     return(
+        <div class="registersection">
 		<div>
 			<h1>
                 Sign Up
@@ -94,6 +97,7 @@ export default function SignupPage(props){
 
 
         </div>
+        <div class="form-group">
         <label>
                 <p class="text-left">Age</p>
                 <input 
@@ -102,6 +106,7 @@ export default function SignupPage(props){
                 value={age}
                 onChange={(event)=>{setAge(event.target.value)}} />
             </label>
+        </div>
         <div class="form-group">
             <label>
                 <p class="text-left">Password</p>
@@ -130,10 +135,11 @@ export default function SignupPage(props){
             <button class="btn btn-info" onClick={() => {signup(email, password, suburb, firstName, lastName, phoneNumber)}}>
                 Register
             </button>
+            <p>Already have an account? <Link to="/loginorsignup"> Log in here. </Link></p>
         </div>
         </form>
-
-    
+       
+        </div>
         <Footer/>
 		</div>
 	)
